@@ -16,7 +16,6 @@ data(){
 
 components:{
     CountryFlag,
-    // LangFlag,
 },
 
 
