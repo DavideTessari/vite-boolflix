@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: red;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.card{
+    width: calc(100% / 5 - 2rem);
+    margin: 0.4rem;
+    background-color: #2b2a33;
+    transition: all 1s ease-out;
+    overflow: hidden;
+    position: relative;
+
+
+    .cardInfo{
+        display: block;
+        opacity: 0;
+    }
+}
+.card:hover{
+    .cardInfo{
+        opacity: 1;
+    }
+
+}
+.flag{
+    width: 25px;
+    height: 15px;
+}
+.star{
+    color: green;
+}

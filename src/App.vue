@@ -1,51 +1,36 @@
-<script>
-import axios from 'axios';
+<script >
 import AppHeader from './components/AppHeader.vue';
-import SearchFilm from './components/SearchFilm.vue';
-import FilmList from './components/FilmList.vue';
+import AppMain from './components/AppMain.vue';
+import axios from 'axios';
+import { store } from './store';
+import AppCardFilm from './components/AppCardFilm.vue';
+import AppSearchbar from './components/AppSearchbar.vue';
 
-export default {
-  components: {
+export default{
+  name: 'App',
+  components:{
     AppHeader,
-    SearchFilm,
-    FilmList
+    AppMain,
+    AppCardFilm,
+    AppCardSerie,
+    AppSearchbar,
   },
-  data() {
-    return {
-      searchResults: []
-    };
-  },
-  methods: {
-    async searchFilms(query) {
-      try {
-        const response = await axios.get(
-          `https://api.themoviedb.org/3/search/movie`,
-          {
-            params: {
-              api_key: 'YOUR_API_KEY',
-              query: query
-            }
-          }
-        );
-        this.searchResults = response.data.results;
-      } catch (error) {
-        console.error('Error fetching movies:', error);
-      }
+  data(){
+    return{
+      store,
     }
   }
-};
+}
 </script>
 
 <template>
   <div>
-    <AppHeader />
-    <SearchFilm @search="searchFilms" />
-    <div v-if="searchResults.length">
-      <FilmList :films="searchResults" />
-    </div>
+    <AppHeader/>
+    <AppMain/>
   </div>
 </template>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+@import './style/general.scss';
+@import './style/partials/_variables.scss';
 </style>
