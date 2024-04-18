@@ -23,10 +23,10 @@ export default {
 <style lang="scss" scoped>
   @use '../style/general.scss';
   div{
-      background-color: black;
+    background-color: black;
   }
   .logo{
-      width: 150px;
-      margin-left: 1.5rem;
+    padding: 25px;
+    width: 150px;
   }
 </style>
