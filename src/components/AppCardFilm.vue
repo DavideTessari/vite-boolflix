@@ -79,14 +79,14 @@ section {
         color: white;
         position: relative;
 
-        &:hover {
-            .card-info {
-                opacity: 1;
-            }
-            .poster {
-                height: 45%;
-            }
-        }
+        // &:hover {
+        //     .card-info {
+        //         opacity: 1;
+        //     }
+        //     .poster {
+        //         height: 45%;
+        //     }
+        // }
 
         .card-info {
             display: block;

@@ -97,12 +97,12 @@ section {
   }
 }
 
-.card:hover {
-  .cardInfo {
-    opacity: 1;
-  }
-  .poster {
-    height: 45%;
-  }
-}
+// .card:hover {
+//   .cardInfo {
+//     opacity: 1;
+//   }
+//   .poster {
+//     height: 45%;
+//   }
+// }
 </style>
