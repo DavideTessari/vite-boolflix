@@ -30,30 +30,30 @@ export default {
 </script>
 
 <template>
-  <div class="searchbar">
-      <i class="fa-solid fa-magnifying-glass icon"></i>
-      <input type="text" v-model="researchText" @keyup.enter="searchMovie(researchText)" placeholder="Search a film/serie tv">
-      <button @click="searchMovie(researchText), researchText=''">Search film</button>
-  </div>
+    <div class="searchbar">
+        <i class="fa-solid fa-magnifying-glass icon"></i>
+        <input type="text" v-model="researchText" @keyup.enter="searchMovie(researchText)" placeholder="Search a film/serie tv">
+        <button @click="searchMovie(researchText), researchText=''">Search film</button>
+    </div>
 </template>
-
+  
 <style lang="scss" scoped>
-.searchbar{
-    margin:1.5rem 1.5rem;
-
-}
-.icon{
-    color: white;
-    margin-right: 1.5rem;
-}
-input{
-    height: 35px;
-    border-radius: 15px;
-    padding: 0.5rem;
-}
-button{
-    padding: 0.5rem;
-    border-radius: 15px;
-    margin-left: 1rem;
-}
+    .searchbar{
+        margin:1.5rem 1.5rem;
+    }
+      
+    .icon{
+        color: white;
+        margin-right: 1.5rem;
+    }
+    input{
+        height: 35px;
+        border-radius: 15px;
+        padding: 0.5rem;
+    }
+    button{
+        padding: 0.5rem;
+        border-radius: 15px;
+        margin-left: 1rem;
+    }
 </style>
