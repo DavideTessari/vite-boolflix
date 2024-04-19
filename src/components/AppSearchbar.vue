@@ -10,7 +10,6 @@ export default {
             researchText:'',
             apiUrl:'https://api.themoviedb.org/3/search/',
             tokenAcces: 'api_key=dd6f748407d41158f1d47125a3b3fd33',
-            apiKey: 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYTE5ODVmOGJhNmY5YWYwODVkYTAwMGQ4MzAxOGIxMiIsInN1YiI6IjY0OTJjMDE4YzI4MjNhMDExY2RiYmQ4ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.rjoTAjJQnTZircyjbvjJMh1rWLsXeA49Rb5O4Ny4A60',
         }
     },
     methods: {

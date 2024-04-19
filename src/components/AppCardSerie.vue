@@ -37,7 +37,7 @@ export default {
 <template>
   <div>
     <section>
-      <h2>Serie</h2>
+      <h2>SERIE</h2>
       <div class="flex wrap">
         <div v-for="serie in store.series" :key="serie.id" class="card relative hover">
           <img :src="posterImg(serie.poster_path)" alt="Series Poster" class="poster">
@@ -64,12 +64,18 @@ export default {
 @import '../style/general.scss';
 
 section {
-  width: 85%;
-  min-height: 500px;
-  color: white;
-  margin: 0 auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  width: 95%;
+    min-height: 500px;
+    margin: 0 auto;
+    color: white;
+}
+
+h2{
+  font-size: 40px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  padding: 30px;
 }
 
 .poster {
@@ -80,7 +86,7 @@ section {
 }
 
 .card {
-  width: calc(100% / 5 - 2rem);
+  width: calc(20% - 0.8rem);
   margin: 0.4rem;
   background-color: #2b2a33;
   color: white;

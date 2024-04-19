@@ -28,7 +28,7 @@ export default {
 
 <template>
     <section>
-        <h2>Film</h2>
+        <h2>FILM</h2>
         <div class="flex wrap">
             <div v-for="movie in store.movies" :key="movie.id" class="card">
                 <img :src="posterImg(movie.poster_path)" alt="Movie Poster" class="poster">
@@ -59,11 +59,18 @@ export default {
 @use '../style/general.scss';
 
 section {
-    width: 85%;
+    width: 95%;
     min-height: 500px;
     margin: 0 auto;
-    padding: 2rem 0;
     color: white;
+
+    h2{
+      font-size: 40px;
+      text-align: center;
+      color: red;
+      font-weight: bold;
+      padding: 30px;
+    }
 
     .poster {
         width: 100%;
