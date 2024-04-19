@@ -89,6 +89,19 @@ section {
   .cardInfo {
     display: block;
     opacity: 0;
+
+    .star{
+      i {
+            font-size: 1rem;
+            color: gold;
+        }
+    }
+    .empty-star {
+        i {
+            font-size: 1rem;
+            color: white;
+        }
+    }
   }
 
   .flag {

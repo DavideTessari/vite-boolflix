@@ -99,11 +99,16 @@ section {
         }
     }
 
-    .star,
+    .star{
+      i {
+            font-size: 1rem;
+            color: gold;
+        }
+    }
     .empty-star {
         i {
             font-size: 1rem;
-            color: gold;
+            color: white;
         }
     }
 }
