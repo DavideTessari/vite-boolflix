@@ -76,7 +76,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 1s ease-in;
+  transition: all 0.5s;
 }
 
 .card {
@@ -97,12 +97,12 @@ section {
   }
 }
 
-// .card:hover {
-//   .cardInfo {
-//     opacity: 1;
-//   }
-//   .poster {
-//     height: 45%;
-//   }
-// }
+.card:hover {
+  .cardInfo {
+    opacity: 1;
+  }
+  .poster {
+    height: 0%;
+  }
+}
 </style>

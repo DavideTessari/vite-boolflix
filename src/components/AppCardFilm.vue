@@ -69,7 +69,7 @@ section {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: all 1s ease-in;
+        transition: all 0.5s ease-in;
     }
 
     .card {
@@ -79,14 +79,14 @@ section {
         color: white;
         position: relative;
 
-        // &:hover {
-        //     .card-info {
-        //         opacity: 1;
-        //     }
-        //     .poster {
-        //         height: 45%;
-        //     }
-        // }
+        &:hover {
+            .card-info {
+                opacity: 1;
+            }
+            .poster {
+                height: 0%;
+            }
+        }
 
         .card-info {
             display: block;
